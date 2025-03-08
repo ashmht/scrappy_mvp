@@ -1,0 +1,37 @@
+<html>
+<body style="font-family: Arial, sans-serif; color: #2c3e50; background-color: #f9f9f9; padding: 20px;">
+    <h2 style="color: #2c3e50;">Scrappy Trading Alert</h2>
+    <hr style="border: 1px solid #e8ecef;">
+    <h3 style="color: #2c3e50;">{action} Opportunity for {asset}</h3>
+    <table style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <td style="padding: 8px; font-weight: bold;">Stock:</td>
+            <td style="padding: 8px;">{asset}</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; font-weight: bold;">Action:</td>
+            <td style="padding: 8px; color: {action_color}; font-weight: bold;">{action}</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; font-weight: bold;">Signal:</td>
+            <td style="padding: 8px;">{signal}</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; font-weight: bold;">Sentiment:</td>
+            <td style="padding: 8px; color: {sentiment_color};">{avg_compound:.2f} ({sentiment_label})</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; font-weight: bold;">News Items:</td>
+            <td style="padding: 8px;">{news_count}</td>
+        </tr>
+    </table>
+    <h4 style="color: #2c3e50; margin-top: 20px;">Summary</h4>
+    <p>{description}</p>
+    <p><strong>Sector:</strong> {sector}</p>
+    <p><strong>S&P 500:</strong> {sp500} <em>(Note: Approximate; verify manually)</em></p>
+    <hr style="border: 1px solid #e8ecef;">
+    <p style="font-size: 14px; color: #666;">
+        Check the <a href="http://localhost:8501" style="color: #00cc96;">Scrappy Dashboard</a> for more details.
+    </p>
+</body>
+</html>
